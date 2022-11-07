@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Alien clicker</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="background-img d-flex flex-column">
+
+
+    <main class="container-fluid text-light">
+        <!-- SECTION Title -->
+        <div class="row m-2 d-flex justify-content-center">
+            <h1 class="text-light text-center col-12">Alien Clicker</h1>
+        </div>
+
+        <!-- SECTION alien -->
+        <section class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <img class="cursor-pointer" onclick="mine()"
+                    src="https://cdn-icons-png.flaticon.com/512/821/821771.png?w=360" alt="">
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center m-2">
+                <h1>Stars:<span id="starsCount">0</span></h1>
+            </div>
+        </section>
+
+        <!-- SECTION total click count AND auto clicks -->
+
+        <!-- SECTION store -->
+        <section class="row border bg-primary d-flex align-items-center">
+
+
+
+
+            <h1 class="col-4 cursor-pointer text-danger" onclick="buyLaser()">Laser</h1>
+            <p class="col-3 m-2">Increases click count +1</p>
+            <h1 class="col-4 updateLasersPrice()">Price: <span id="laserPrice">10</span></h1>
+            <h2>Total: <span id="laserTotal">0</span></h2>
+
+
+
+
+            <h1 class="col-4 cursor-pointer text-danger" onclick="buyStarship()">Starship</h1>
+            <p class="col-3 m-2">Increases click count +5</p>
+            <h1 class="col-4">Price: <span id="starshipPrice">50</span></h1>
+            <h2>Total: <span id="starshipTotal">0</span></h2>
+
+
+
+
+            <h1 class="col-4 cursor-pointer text-danger" onclick="buyRover()">Rover</h1>
+            <p class="col-3 m-2">gives +20 stars every three seconds</p>
+            <h1 class="col-4">Price: <span id="roverPrice">600</span></h1>
+            <h2>Total: <span id="roverTotal">0</span></h2>
+
+
+
+
+            <h1 class="col-4 cursor-pointer text-danger" onclick="buyPlanet()">Planet</h1>
+            <p class="col-3 m-2">gives +40 stars every three seconds</p>
+            <h1 class="col-4">Price: <span id="planetPrice">1200</span></h1>
+            <h2>Total: <span id="planetTotal">0</span></h2>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
